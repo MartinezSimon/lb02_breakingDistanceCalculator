@@ -7,16 +7,17 @@ function calculateFromInput(){
         velocity: veloctiyElement.value,
         breakingType: breakingTypeElement.value
     };
-    calculate(input);
+    var breakingDistanceMeters = calculate(input);
+    outputElement.innerHTML = `${breakingDistanceMeters} meters.`;
 }
 
 function calculate(input){
-    if(breakingType == "breakNormal"){
-        var breakingDistanceNormal = (velocity / 10) * (velocity /10) ;
-        outputElement.innerHTML = breakingDistanceNormal;
+    if(input.breakingType == "breakNormal"){
+        var breakingDistanceNormal = (input.velocity / 10) * (input.velocity /10) ;
+        return breakingDistanceNormal;
     }
     else{
-        var breakingDistanceNormal = ((velocity / 10) * (velocity /10)) / 2 ;
-        outputElement.innerHTML = breakingDistanceNormal;
+        var breakingDistanceEmergency = ((input.velocity / 10) * (input.velocity /10)) / 2 ;
+        return breakingDistanceEmergency;
     }
 }
