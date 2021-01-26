@@ -3,15 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <title>lb02_breakingDistanceCalculator</title>
-        <link href="styles.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <script src="calc.js"></script>
-        <input type="number" id="velocity" name="velocity">
-        <select name="breakingType" id="breakingType">
-            <option value="breakNormal">Normal</option>
-            <option value="emergencyStop">Emergency Stop</option></select>
-        <button onclick="calculateFromInput()">Calculate</button>
-        <span id="output"></span>
+        <main>
+            <h1>Breaking distance calculator</h1>
+            <!--Velocity input parameter-->
+            <label for="velocity">Velocity(km/h)</label>
+            <input type="text" id="velocity" name="velocity">
+            <!--Breaking input parameter-->
+            <label for="breakingType">Breaking type</label>
+            <select name="breakingType" id="breakingType">
+                <option value="breakNormal">Normal</option>
+                <option value="emergencyStop">Emergency Stop</option>
+            </select>
+            <br><br>
+            <button onclick="calculateFromInput()">Calculate</button>
+            <br><br>
+            <span id="output"></span>
+        </main>
+        <footer>
+            Copyright Yannis Julien Eindiguer, Simon Martinez
+        </footer>
+        <script src="scripts/calc.js"></script>
     </body>
 </html>

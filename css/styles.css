@@ -1,0 +1,26 @@
+body {
+    background-image: url("kevin-clyde-berbano-owUsLvu4HQ0-unsplash.jpg");
+    color: black;
+    font-family: verdana;
+}
+
+main {
+    margin: 5em;
+}
+
+input, select, button {
+    border: black 2px solid;
+    border-radius: 5%;
+    margin-bottom: 1.5em;
+    width: 10em;
+}
+
+label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+}
