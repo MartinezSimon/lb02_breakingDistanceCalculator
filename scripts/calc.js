@@ -25,7 +25,6 @@ function calculate(input){
     var breakingDistance;
     //Prints Jason object in console
     console.dir(input);
-
     if(input.breakingType == "breakNormal"){
         //Calculation for normal breaking distance
         breakingDistance = (input.velocity / 10) * (input.velocity /10) ;
